@@ -1,0 +1,55 @@
+/* =========================================================
+   NAUKRI JOBNEST - RECRUITER CANDIDATES PAGE STYLING
+   ========================================================= */
+
+.recruiter-candidates-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 30px 24px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  animation: fadeIn 0.4s ease-out;
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 0;
+  color: #1e293b;
+  border-collapse: collapse;
+}
+
+.table-light {
+  background-color: #f8fafc !important;
+}
+
+.table th {
+  background-color: #f8fafc;
+  color: #475569;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 16px 20px;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.table td {
+  padding: 16px 20px;
+  vertical-align: middle;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+.btn-success {
+  background: #16a34a !important;
+  color: #ffffff !important;
+  border: none !important;
+  font-weight: 600 !important;
+  box-shadow: 0 2px 8px rgba(22, 163, 74, 0.2) !important;
+}
+
+.btn-success:hover {
+  background: #15803d !important;
+}

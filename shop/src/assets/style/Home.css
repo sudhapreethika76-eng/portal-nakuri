@@ -1,0 +1,133 @@
+/* =========================================================
+   NAUKRI JOBNEST - STUDENT HOME PAGE STYLING
+   ========================================================= */
+
+.student-home-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 30px 24px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.student-welcome-card {
+  background: linear-gradient(135deg, #0c2340 0%, #1e293b 100%);
+  color: #ffffff;
+  padding: 36px 40px;
+  border-radius: 16px;
+  margin-bottom: 30px;
+  box-shadow: 0 12px 30px rgba(12, 35, 64, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.student-welcome-card h1 {
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  margin-bottom: 10px;
+}
+
+.student-welcome-card p {
+  color: #94a3b8;
+  font-size: 16px;
+}
+
+/* Search Input inside Hero */
+.student-welcome-card form input.form-control {
+  border: 2px solid transparent !important;
+  transition: all 0.2s ease !important;
+}
+
+.student-welcome-card form input.form-control:focus {
+  border-color: #38bdf8 !important;
+  box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.25) !important;
+  outline: none;
+}
+
+/* Job Cards Styling */
+.job-feed-section h2 {
+  font-size: 22px;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: -0.3px;
+}
+
+.job-card-item, 
+.job-feed-section div[style*="background: #ffffff"], 
+.job-feed-section div[style*="background: rgb(255, 255, 255)"] {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.job-card-item:hover, 
+.job-feed-section div[style*="background: #ffffff"]:hover,
+.job-feed-section div[style*="background: rgb(255, 255, 255)"]:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 12px 28px rgba(39, 93, 245, 0.12) !important;
+  border-color: #bfdbfe !important;
+}
+
+/* Badges */
+.badge.bg-primary {
+  background-color: #eff6ff !important;
+  color: #275df5 !important;
+  border: 1px solid #bfdbfe !important;
+  font-weight: 700 !important;
+}
+
+.badge.bg-success {
+  background-color: #f0fdf4 !important;
+  color: #16a34a !important;
+  border: 1px solid #bbf7d0 !important;
+  font-weight: 700 !important;
+}
+
+.badge.bg-danger {
+  background-color: #fef2f2 !important;
+  color: #dc2626 !important;
+  border: 1px solid #fecaca !important;
+  font-weight: 700 !important;
+}
+
+.badge.bg-info {
+  background-color: #f0f9ff !important;
+  color: #0284c7 !important;
+  border: 1px solid #bae6fd !important;
+  font-weight: 700 !important;
+}
+
+/* Skill Chips */
+.job-feed-section span[style*="background: #f1f5f9"],
+.job-feed-section span[style*="background: rgb(241, 245, 249)"] {
+  background-color: #f8fafc !important;
+  border: 1px solid #e2e8f0 !important;
+  color: #475569 !important;
+  font-weight: 600 !important;
+  transition: all 0.2s ease !important;
+}
+
+.job-feed-section span[style*="background: #f1f5f9"]:hover,
+.job-feed-section span[style*="background: rgb(241, 245, 249)"]:hover {
+  background-color: #eff6ff !important;
+  color: #275df5 !important;
+  border-color: #bfdbfe !important;
+}
+
+/* Primary Button Override */
+.btn-primary {
+  background: linear-gradient(135deg, #275df5 0%, #1d4ed8 100%) !important;
+  border: none !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 12px rgba(39, 93, 245, 0.25) !important;
+  transition: all 0.2s ease !important;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%) !important;
+  box-shadow: 0 6px 16px rgba(39, 93, 245, 0.35) !important;
+  transform: translateY(-1px) !important;
+}

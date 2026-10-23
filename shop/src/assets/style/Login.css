@@ -1,0 +1,194 @@
+/* =========================================================
+   NAUKRI JOBNEST - LOGIN PAGE STYLING
+   ========================================================= */
+
+.login-page-container {
+    width: 100%;
+    min-height: calc(100vh - 70px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    background-color: #f3f5f9;
+}
+
+.login-auth-card {
+    width: 100%;
+    max-width: 440px;
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(15, 23, 42, 0.08);
+    padding: 38px 34px;
+    transition: all 0.3s ease;
+}
+
+.login-auth-card:hover {
+    box-shadow: 0 12px 36px rgba(39, 93, 245, 0.12);
+}
+
+.login-auth-header {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.login-auth-header h2 {
+    color: #0f172a;
+    font-size: 26px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    margin: 0 0 8px 0;
+}
+
+.login-auth-header p {
+    color: #64748b;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Alert Styling */
+.login-alert {
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.login-alert-danger {
+    background-color: #fef2f2;
+    color: #dc2626;
+    border: 1px solid #fecaca;
+}
+
+/* Role Selector Segment */
+.login-role-wrapper {
+    margin-bottom: 22px;
+}
+
+.login-role-label {
+    display: block;
+    margin-bottom: 8px;
+    color: #0f172a;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.login-role-switcher {
+    display: flex;
+    background-color: #f1f5f9;
+    padding: 4px;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    gap: 4px;
+}
+
+.login-role-switcher .btn-check {
+    display: none;
+}
+
+.login-role-switcher .role-option-btn {
+    flex: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 10px 14px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #64748b;
+    border-radius: 8px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    user-select: none;
+}
+
+.login-role-switcher .btn-check:checked + .role-option-btn,
+.login-role-switcher .role-option-btn.active {
+    background-color: #ffffff;
+    color: #275df5;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.08);
+}
+
+/* Form Controls */
+.login-form-group {
+    margin-bottom: 18px;
+}
+
+.login-form-group .form-label {
+    display: block;
+    margin-bottom: 6px;
+    color: #334155;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.login-form-group .form-control {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 15px;
+    color: #0f172a;
+    background-color: #ffffff;
+    border: 1.5px solid #cbd5e1;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.2s ease;
+    box-sizing: border-box;
+}
+
+.login-form-group .form-control:focus {
+    border-color: #275df5;
+    box-shadow: 0 0 0 4px rgba(39, 93, 245, 0.15);
+}
+
+.login-submit-btn {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    background: linear-gradient(135deg, #275df5 0%, #1d4ed8 100%);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 14px rgba(39, 93, 245, 0.3);
+    margin-top: 10px;
+}
+
+.login-submit-btn:hover {
+    background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
+    box-shadow: 0 6px 18px rgba(39, 93, 245, 0.4);
+    transform: translateY(-1px);
+}
+
+.login-submit-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.login-footer-prompt {
+    margin-top: 24px;
+    text-align: center;
+    font-size: 14px;
+    color: #64748b;
+    border-top: 1px solid #f1f5f9;
+    padding-top: 20px;
+}
+
+.login-footer-prompt a {
+    color: #275df5;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.login-footer-prompt a:hover {
+    text-decoration: underline;
+}
